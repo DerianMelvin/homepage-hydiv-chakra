@@ -1,7 +1,7 @@
 import { Flex, HStack, Link, Image, Button } from "@chakra-ui/react";
 import logo from "../assets/company_logo.png";
 
-const Header = () => {
+const Nav = () => {
   return (
     <Flex align="center" justify="space-between" px="5%" bgColor="whitesmoke">
       <Image
@@ -25,4 +25,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Nav;
