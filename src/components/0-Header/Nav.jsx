@@ -1,5 +1,5 @@
 import { Flex, HStack, Link, Image, Button } from "@chakra-ui/react";
-import logo from "../assets/company_logo.png";
+import logo from "../../assets/company_logo.png";
 
 const Nav = () => {
   return (

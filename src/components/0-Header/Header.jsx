@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import Nav from "../Nav";
+import Nav from "./Nav";
 // import bgImage1 from "../assets/images/background_image_1.jpg";
 
 const Header = () => {
