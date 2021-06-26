@@ -22,7 +22,15 @@ const BackgroundHeader = () => {
   });
 
   return (
-    <Flex>
+    <Flex _before={{
+      content:`""`,
+      height: "90vh",
+      width: "100vw",
+      position: "absolute",
+      bottom: "0",
+      left: "0",
+      background: "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4))"
+    }}>
       {displayImages}
     </Flex>
   );
