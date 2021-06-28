@@ -4,6 +4,8 @@ const ContentHeader = () => {
   return (
     <Flex
       px="4%"
+      height="90vh"
+      minHeight="30rem"
       width="100vw"
       justify="center"
       position="absolute"
@@ -23,7 +25,7 @@ const ContentHeader = () => {
           Live with <br /> Elegance
         </Heading>
 
-        <Text m="2rem" width="100%" fontSize="3xl">
+        <Text m="2rem" width="100%" fontSize="2xl">
           Quality furnitures made exclusively for your needs.
         </Text>
       </Flex>

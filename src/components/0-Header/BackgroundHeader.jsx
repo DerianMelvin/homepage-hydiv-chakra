@@ -12,7 +12,8 @@ const BackgroundHeader = () => {
       <Image
         src={img}
         alt="header background image"
-        height="90vh"
+        height="95vh"
+        minHeight="33rem"
         width="33.3vw"
         objectFit="cover"
         position="relative"
@@ -24,10 +25,10 @@ const BackgroundHeader = () => {
   return (
     <Flex _before={{
       content:`""`,
-      height: "90vh",
+      height: "95vh",
+      minHeight: "33rem",
       width: "100vw",
       position: "absolute",
-      bottom: "0",
       left: "0",
       background: "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4))"
     }}>
