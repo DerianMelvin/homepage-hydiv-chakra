@@ -10,22 +10,20 @@ const About = () => {
       <ContentAbout
         heading="Look and Feel Comfortable"
         text="Maximize your favourite activities with the best-in-class comfort
-            and modern looks."
+            with modern looks."
         flexDirection="row"
         imageSrc={img1}
       />
       <ContentAbout
-        heading="Look and Feel Comfortable"
-        text="Maximize your favourite activities with the best-in-class comfort
-            and modern looks."
+        heading="Optimize Space with Unique Design"
+        text="Make your own home more memorable everytime you place or organize things with interesting designs that will caught your attention."
         textAlign="left"
         flexDirection="row-reverse"
         imageSrc={img2}
       />
       <ContentAbout
-        heading="Look and Feel Comfortable"
-        text="Maximize your favourite activities with the best-in-class comfort
-            and modern looks."
+        heading="Variety of Choices for a Perfect Home"
+        text="Not a great fit for your home? Simply pick another from our wide range of design variety to satisfy your needs for a perfect living space."
         flexDirection="row"
         imageSrc={img3}
       />
