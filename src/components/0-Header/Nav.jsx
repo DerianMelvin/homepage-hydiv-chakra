@@ -3,7 +3,7 @@ import logo from "../../assets/company_logo.png";
 
 const Nav = () => {
   return (
-    <Flex position="relative" align="center" justify="space-between" px="5%" bgColor="whitesmoke" zIndex="10">
+    <Flex position="relative" align="center" justify="space-between" px="6%" bgColor="whitesmoke" zIndex="10">
       <Image
         w="auto"
         h="2rem"

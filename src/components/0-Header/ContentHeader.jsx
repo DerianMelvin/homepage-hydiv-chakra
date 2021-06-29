@@ -3,7 +3,7 @@ import { Flex, Heading, Text } from "@chakra-ui/react";
 const ContentHeader = () => {
   return (
     <Flex
-      px="4%"
+      px="6%"
       height="90vh"
       minHeight="30rem"
       width="100vw"

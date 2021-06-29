@@ -1,22 +1,40 @@
-import { Flex, Image, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Heading, Text } from "@chakra-ui/react";
 
-const ContentAbout = ({ heading, text, textAlign = "right", flexDirection, imageSrc }) => {
+const ContentAbout = ({
+  heading,
+  text,
+  textAlign = "right",
+  flexDirection,
+  imageSrc,
+}) => {
   return (
-    <Flex direction={flexDirection} px="4%" my="5rem" align="center" justify="space-between">
-      <Image
-        src={imageSrc}
-        alt="About background image"
-        width="38rem"
-        objectFit="cover"
-        position="relative"
-      />
-      <Flex width="25rem" direction="column" align="right" textAlign={textAlign}>
-        <Heading as="h2" size="3xl">
+    <Flex
+      direction={flexDirection}
+      mt="7rem"
+      align="center"
+      justify="space-between"
+    >
+      <Box>
+        <Image
+          src={imageSrc}
+          alt="About background image"
+          width="40rem"
+          objectFit="cover"
+          position="relative"
+        />
+      </Box>
+
+      <Flex
+        px="2rem"
+        width="35rem"
+        direction="column"
+        align="right"
+        textAlign={textAlign}
+      >
+        <Heading mb="2rem" as="h2" size="3xl">
           {heading}
         </Heading>
-        <Text size="2xl">
-          {text}
-        </Text>
+        <Text fontSize="xl">{text}</Text>
       </Flex>
     </Flex>
   );

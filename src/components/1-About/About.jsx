@@ -6,7 +6,7 @@ import ContentAbout from "./ContentAbout";
 
 const About = () => {
   return (
-    <Box>
+    <Box px="6%">
       <ContentAbout
         heading="Look and Feel Comfortable"
         text="Maximize your favourite activities with the best-in-class comfort
