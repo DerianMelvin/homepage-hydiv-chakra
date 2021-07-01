@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import LinksFooter from "./LinksFooter";
+import SubscriptionFooter from "./SubscriptionFooter";
 
 const Footer = () => {
   return (
@@ -13,6 +14,7 @@ const Footer = () => {
       zIndex="10"
     >
       <LinksFooter />
+      <SubscriptionFooter />
     </Flex>
   );
 };
