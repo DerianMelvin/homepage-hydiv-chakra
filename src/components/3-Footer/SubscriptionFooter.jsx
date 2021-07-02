@@ -3,7 +3,6 @@ import { Flex, Heading, Text, Input, Button } from "@chakra-ui/react";
 const SubscriptionFooter = () => {
   return (
     <Flex
-      my="2rem"
       width="60%"
       direction="column"
       align="flex-end"
@@ -15,7 +14,7 @@ const SubscriptionFooter = () => {
         Unique Newsletter Every Week
       </Heading>
       <Text mt="0.3rem" width="60%">
-        Subscribe and find out about our new items, design recommendations, and
+        Find out our new items, design recommendations, and
         discounts for your next purchase.
       </Text>
 

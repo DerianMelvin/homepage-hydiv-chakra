@@ -14,7 +14,7 @@ const BackgroundHeader = () => {
         alt="header background image"
         height="95vh"
         minHeight="33rem"
-        width="33.3vw"
+        width="33.3%"
         objectFit="cover"
         position="relative"
         zIndex="-1"
@@ -27,7 +27,7 @@ const BackgroundHeader = () => {
       content:`""`,
       height: "95vh",
       minHeight: "33rem",
-      width: "100vw",
+      width: "100%",
       position: "absolute",
       left: "0",
       background: "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4))"

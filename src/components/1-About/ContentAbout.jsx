@@ -34,7 +34,7 @@ const ContentAbout = ({
         <Heading mb="2rem" as="h2" size="3xl">
           {heading}
         </Heading>
-        <Text fontSize="xl">{text}</Text>
+        <Text fontSize="lg">{text}</Text>
       </Flex>
     </Flex>
   );

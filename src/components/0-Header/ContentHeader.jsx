@@ -6,7 +6,7 @@ const ContentHeader = () => {
       px="6%"
       height="90vh"
       minHeight="30rem"
-      width="100vw"
+      width="100%"
       justify="center"
       position="absolute"
       left="0"

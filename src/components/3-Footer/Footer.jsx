@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <Flex
       px="6%"
+      py="2rem"
       mt="7rem"
       position="relative"
       align="center"
