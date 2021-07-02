@@ -1,10 +1,23 @@
-import { Flex, HStack, Link, Image, Icon } from "@chakra-ui/react";
+import {
+  Flex,
+  HStack,
+  Image,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+} from "@chakra-ui/react";
 import logo from "../../assets/company_logo.png";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import SocialMediaFooter from "./SocialMediaFooter";
 
 const LinksFooter = () => {
   return (
-    <Flex my="2rem" direction="column" align="flex-start" justify="flex-start">
+    <Flex
+      width="40%"
+      direction="column"
+      align="flex-start"
+      justify="flex-start"
+    >
       <Image
         w="auto"
         h="2rem"
@@ -14,39 +27,25 @@ const LinksFooter = () => {
       />
 
       <HStack mt="2rem" spacing="10">
-        <Link>Home</Link>
-        <Link>Listing</Link>
-        <Link>About Us</Link>
+        <Breadcrumb separator="|">
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#home">Home</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#listing">Listing</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href="#aboutus">About Us</BreadcrumbLink>
+          </BreadcrumbItem>
+        </Breadcrumb>
       </HStack>
 
       <HStack mt="2rem" spacing="10">
-        <Link href="#facebook">
-          <Icon
-            display="flex"
-            align="center"
-            justify="center"
-            boxSize="2rem"
-            as={FaFacebookF}
-          />
-        </Link>
-        <Link href="#twitter">
-          <Icon
-            display="flex"
-            align="center"
-            justify="center"
-            boxSize="2rem"
-            as={FaTwitter}
-          />
-        </Link>
-        <Link href="#instagram">
-          <Icon
-            display="flex"
-            align="center"
-            justify="center"
-            boxSize="2rem"
-            as={FaInstagram}
-          />
-        </Link>
+        <SocialMediaFooter href="#facebook" icon={FaFacebookF} />
+        <SocialMediaFooter href="#twitter" icon={FaTwitter} />
+        <SocialMediaFooter href="#instagram" icon={FaInstagram} />
       </HStack>
     </Flex>
   );
