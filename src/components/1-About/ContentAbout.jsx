@@ -3,14 +3,15 @@ import { Box, Flex, Image, Heading, Text } from "@chakra-ui/react";
 const ContentAbout = ({
   heading,
   text,
-  textAlign = "right",
+  textAlign,
   flexDirection,
   imageSrc,
+  mediaLargerThan1200
 }) => {
   return (
     <Flex
-      direction={flexDirection}
-      mt="7rem"
+      direction={mediaLargerThan1200 ? flexDirection : "column"}
+      mt={mediaLargerThan1200 ? "12rem" : "6rem"}
       align="center"
       justify="space-between"
     >
@@ -18,18 +19,19 @@ const ContentAbout = ({
         <Image
           src={imageSrc}
           alt="About background image"
-          width="40rem"
+          width={mediaLargerThan1200 ? "45rem" : "50rem"}
           objectFit="cover"
-          position="relative"
         />
       </Box>
 
       <Flex
-        px="2rem"
+        ml={textAlign === "right" && mediaLargerThan1200 ? "4rem" : "0"}
+        mr={textAlign === "left" && mediaLargerThan1200 ? "4rem" : "0"}
+        mt={mediaLargerThan1200 ? "0" : "3rem"}
         width="35rem"
         direction="column"
         align="right"
-        textAlign={textAlign}
+        textAlign={mediaLargerThan1200 ? textAlign : "center"}
       >
         <Heading mb="2rem" as="h2" size="3xl">
           {heading}
