@@ -4,7 +4,7 @@ import bgImage1 from "../../assets/images/background_image_1.jpg";
 import bgImage2 from "../../assets/images/background_image_2.jpg";
 import bgImage3 from "../../assets/images/background_image_3.jpg";
 
-const BackgroundHeader = () => {
+const BackgroundHeader = ({ mediaLargerThan1200 }) => {
   const backgroundImages = [bgImage1, bgImage2, bgImage3];
 
   const displayImages = backgroundImages.map((img) => {
@@ -30,7 +30,7 @@ const BackgroundHeader = () => {
       width: "100%",
       position: "absolute",
       left: "0",
-      background: "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4))"
+      background: `${mediaLargerThan1200 ? "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4))" : "linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5))"}`
     }}>
       {displayImages}
     </Flex>
