@@ -1,6 +1,7 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 
-const ContentHeader = () => {
+const ContentHeader = ({ mediaLargerThan1200 }) => {
+
   return (
     <Flex
       px="6%"
@@ -17,7 +18,7 @@ const ContentHeader = () => {
         width="100%"
         direction="column"
         align="center"
-        textAlign="left"
+        textAlign={mediaLargerThan1200 ? "left" : "center"}
         justify="center"
         color="whitesmoke"
       >
