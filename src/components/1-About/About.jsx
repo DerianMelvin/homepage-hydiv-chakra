@@ -1,7 +1,7 @@
 import { Box, useMediaQuery } from "@chakra-ui/react";
-import img1 from "../../assets/images/background_image_1.jpg";
-import img2 from "../../assets/images/background_image_2.jpg";
-import img3 from "../../assets/images/background_image_3.jpg";
+import img4 from "../../assets/images/background_image_4.jpg";
+import img5 from "../../assets/images/background_image_5.jpg";
+import img6 from "../../assets/images/background_image_6.jpg";
 import ContentAbout from "./ContentAbout";
 
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
             with modern looks."
         textAlign="right"
         flexDirection="row"
-        imageSrc={img1}
+        imageSrc={img4}
         mediaLargerThan1200={isLargerThan1200}
       />
       <ContentAbout
@@ -23,7 +23,7 @@ const About = () => {
         text="Make your own home more memorable everytime you place or organize things with interesting designs that will caught your attention."
         textAlign="left"
         flexDirection="row-reverse"
-        imageSrc={img2}
+        imageSrc={img5}
         mediaLargerThan1200={isLargerThan1200}
       />
       <ContentAbout
@@ -31,7 +31,7 @@ const About = () => {
         text="Not a great fit for your home? Simply pick another from our wide range of design variety to satisfy your needs for a perfect living space."
         textAlign="right"
         flexDirection="row"
-        imageSrc={img3}
+        imageSrc={img6}
         mediaLargerThan1200={isLargerThan1200}
       />
     </Box>
